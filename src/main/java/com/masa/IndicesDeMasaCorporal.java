@@ -10,23 +10,22 @@ public class IndicesDeMasaCorporal {
     }
 
     public static String classifyIMC(double imc) {
-        if (imc < 16) {
+        if (imc < 16)
             return "Delgadez Severa";
-        } else if (imc >= 16 && imc < 16.99) {
+        if (imc >= 16 && imc < 16.99)
             return "Delgadez moderada";
-        } else if (imc >= 17 && imc < 18.49) {
+        if (imc >= 17 && imc < 18.49)
             return "Delgadez aceptable";
-        } else if (imc >= 18.5 && imc < 24.99) {
+        if (imc >= 18.5 && imc < 24.99)
             return "Normal Ideal";
-        } else if (imc >= 25 && imc < 29.99) {
+        if (imc >= 25 && imc < 29.99)
             return "Sobrepeso";
-        } else if (imc >= 30 && imc < 34.99) {
+        if (imc >= 30 && imc < 34.99)
             return "Obeso de tipo I";
-        } else if (imc >= 35 && imc < 39.99) {
+        if (imc >= 35 && imc < 39.99)
             return "Obeso de tipo II";
-        } else {
-            return "Obeso de tipo III";
-        }
+        return "Obeso de tipo III";
+
     }
 
     public static void main(String[] args) {
@@ -40,7 +39,7 @@ public class IndicesDeMasaCorporal {
             System.out.println("Altura: " + weight + " kg");
             System.out.println("Peso: " + height + " m");
             System.out.println("IMC: " + imc);
-            System.out.println("Clasificación: " + classification);
+            System.out.println("Clasificacion: " + classification);
 
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
